@@ -955,3 +955,13 @@ func extractRegionError(err error) *errorpb.Error {
 	}
 	return nil
 }
+
+func (svr *Server) GetCheckpoint(context.Context, *kvrpcpb.GetCheckpointRequest) (*kvrpcpb.GetCheckpointResponse, error) {
+	panic("unreachable")
+}
+func (svr *Server) WriteCheckpoint(context.Context, *kvrpcpb.WriteCheckpointRequest) (*kvrpcpb.WriteCheckpointResponse, error) {
+	panic("unreachable")
+}
+func (svr *Server) DeterministicWrite(context.Context, *kvrpcpb.DeterministicWriteRequest) (*kvrpcpb.DeterministicWriteResponse, error) {
+	panic("unreachable")
+}
