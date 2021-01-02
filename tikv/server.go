@@ -965,3 +965,6 @@ func (svr *Server) WriteCheckpoint(context.Context, *kvrpcpb.WriteCheckpointRequ
 func (svr *Server) DeterministicWrite(context.Context, *kvrpcpb.DeterministicWriteRequest) (*kvrpcpb.DeterministicWriteResponse, error) {
 	panic("unreachable")
 }
+func (svr *Server) DeleteVersionsByCommitTs(ctx context.Context, in *kvrpcpb.DeleteVersionsByCommitTsRequest) (*kvrpcpb.DeleteVersionsByCommitTsResponse, error) {
+	panic("unreachable")
+}
